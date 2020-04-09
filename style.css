@@ -3,6 +3,12 @@ body{
   background: #e5e5e5;
   color: #25282B;
   text-align: center;
+  margin: 0px;
+}
+
+#container {
+  width: 90%;
+  max-width: 980px;
 }
 
 button{ 
