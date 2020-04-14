@@ -1,10 +1,9 @@
 
 body{
-  
-  
   color: #25282B;
   background: #e5e5e5;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hide{
@@ -19,6 +18,13 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+p, .description {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+
 }
 
 #container {
@@ -42,15 +48,21 @@ main {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 32px;
+ 
+  
 }
 
 button{ 
   color: #ff5e84;
   border: none;
-  font-weight: bold;
   background: none;
   cursor: pointer;
   outline: none;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
 }
 
 button:hover{
@@ -72,6 +84,15 @@ button.fat:hover{
 
 footer{
   text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #777;
+}
+
+footer a {
+  opacity: 0.7;
 }
 
 .idea{
@@ -96,3 +117,56 @@ footer{
   margin: 0;
 }
 
+.idea p{
+  margin: 8px 0;
+  color: #777
+}
+
+.idea .description {
+  margin: 16px 0;
+
+}
+
+/* Modal */
+
+#modal {
+  background: #ff5e84;
+
+  position: absolute;
+  top: 0;
+  
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+#modal .content{
+  margin-top: 128px;
+  color: white
+
+}
+
+#modal .content h1{
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+#modal form{
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  margin: 16px 0;
+}
+
+form input {
+  width: 100%;
+
+  padding: 12px;
+  border-radius: 6px;
+}
