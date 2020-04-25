@@ -35,11 +35,11 @@
                 </main>
                 
                 <section id="buttons">
-                    <button>+ Adicionar ideia</button>
-                    <button class="fat">Ver ideias</button>
+                    <button onclick="OnOff()">+ Adicionar ideia</button>
+                    <a href="ideas.html" class="button">Ver ideias</a>
                 </section>
-
-                <footer>Com carinho feito por <a href="http://www.rocketseat.com.br">João Gabriel</a></footer>
+                
+                <footer>Com carinho feito por <a href="https://github.com/joaogabrieldev" target="_blank" >João Gabriel</a></footer>
             </section>
 
             <section id="last-ideas">
@@ -48,15 +48,14 @@
                     alt="Imagem de curso de Programação">
 
                     <div class="content">
-                        <h3>cusos de Programação</h3>
+                        <h3>Cursos de Programação</h3>
                         <p>Estudo</p>
                         <div class="description">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit illum impedit aperiam laborum error possimus dolor voluptate inventore id ullam. Amet distinctio velit recusandae tenetur laboriosam nulla dolore, magni exercitationem?
-
                         </div>
                         <a href="#">Ir para a Ideia</a>
                     </div>
-                </div>
+                 </div>
 
                 <div class="idea">
                     <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg"
@@ -91,7 +90,7 @@
         </div>
 
         <!-- Modal -->
-        <div id="modal">
+        <div id="modal" class="hide">
             <div class="content">
                 <h1>Nova Ideia</h1>
 
@@ -122,8 +121,8 @@
                         <input type="url" name="link">
                     </div>
                 
-                
-                    <button>Salvar</button>
+                    <button id="back", onclick="OnOff()">Voltar</button>
+                    <button id="salve", onclick="OnOff()">Salvar</button>
 
                 </form>
 
