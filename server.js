@@ -17,7 +17,7 @@ nunjucks.configure("views", {
   noCache: true,
 })
 
-//criei uma rota / 
+//criei uma rota "/" 
 // e capturo o pedido do cliente para responder
 server.get("/", function(req, res){
 
@@ -38,10 +38,7 @@ server.get("/", function(req, res){
   
   return res.render("index.html", { ideas: lastIdeas })
   })
-
-  
 })
-
 
 server.get("/ideas", function(req, res){
 
@@ -54,9 +51,7 @@ server.get("/ideas", function(req, res){
     const reversedIdeas = [...rows].reverse()
  
     return res.render("ideas.html", { ideas: reversedIdeas})
-  })
-
-  
+  })  
 })
 
 server.post("/", function(req, res){
@@ -70,7 +65,6 @@ server.post("/", function(req, res){
     link
   ) VALUES (?,?,?,?,?);
   `
-
   const values = [
     req.body.image,
     req.body.title,
